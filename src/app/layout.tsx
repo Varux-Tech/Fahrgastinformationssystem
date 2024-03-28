@@ -2,6 +2,33 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import localFont from "next/font/local";
+
+const DBType = localFont({
+  src: [
+    {
+      path: "./fonts/DBNonLatin-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DBNonLatin-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DBNonLatin-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DBNonLatin-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+});
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={DBType.className}>{children}</body>
     </html>
   );
 }
