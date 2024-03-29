@@ -50,13 +50,14 @@ export default function Detail() {
             <div className="graphic mx-8 w-[12px] h-full relative">
               <div className="line w-full h-full bg-gray-800"></div>
             </div>
-            <div className="content flex justify-between items-center flex-1 pe-10 text-3xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Fahrtverlauf</h3>
+            <div className="content flex items-center flex-1 pe-10 text-3xl font-semibold text-gray-500">
+              <div className="w-[200px]">
+                <h3>Geplant</h3>
               </div>
-              <div className="right">
-                <h3>Abfahrt in 3 min</h3>
+              <div className="w-[200px]">
+                <h3>Ankunft</h3>
               </div>
+              <h3>Andere Stationen</h3>
             </div>
           </div>
           <div className="content-row flex w-full h-[75px]">
@@ -67,22 +68,16 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Köln Hbf</h3>
-              </div>
-              <div className="right">
-                <h3 className="text-green-800 font-bold">14:12</h3>
-              </div>
-            </div>
-          </div>
-          <div className="content-row flex w-full h-[75px]">
-            <div className="graphic mx-8 w-[12px] h-full relative flex items-center justify-center">
-              <div className="line w-full h-full border border-y-0 border-gray-800"></div>
-              <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
-            </div>
-            <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Solingen Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Köln Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -92,8 +87,16 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Wuppertal Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Solingen Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -103,8 +106,16 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Hagen Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Wuppertal Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -114,8 +125,16 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Dortmund Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Hagen Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -125,8 +144,16 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Münster(Westf)Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Dortmund Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -136,8 +163,35 @@ export default function Detail() {
               <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
             </div>
             <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
-              <div className="left">
-                <h3>Osnabrück Hbf</h3>
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Münster(Westf)Hbf</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-row flex w-full h-[75px]">
+            <div className="graphic mx-8 w-[12px] h-full relative flex items-center justify-center">
+              <div className="line w-full h-full border border-y-0 border-gray-800"></div>
+              <div className="ball w-[25px] h-[25px] rounded-full border-[4px] bg-white absolute border-gray-800"></div>
+            </div>
+            <div className="content flex justify-between items-center flex-1 pe-10 text-4xl font-semibold text-gray-500">
+              <div className="left flex items-center">
+                <div className="planned w-[200px]">
+                  <h3>13:13</h3>
+                </div>
+                <div className="arrival w-[200px]">
+                  <h3 className="text-green-800">13:13</h3>
+                </div>
+                <div className="station">
+                  <h3>Osnabrück Hbf</h3>
+                </div>
               </div>
             </div>
           </div>
